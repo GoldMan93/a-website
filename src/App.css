@@ -1,39 +1,76 @@
-/* Sidebar Styling */
-.sidebar {
-  width: 250px;
+/* Page Background */
+body {
+  background-color: #2e2e2e; /* Dark gray background */
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.sidebar h4 {
-  margin: 0;
+html {
+  height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #333333; /* Slightly darker gray for sidebar */
 }
 
 .sidebar .list-group-item {
+  background-color: #444444; /* Dark gray for menu options */
+  color: #ffc107; /* Yellow text */
   border: none;
 }
 
 .sidebar .list-group-item:hover {
-  background-color: #ffc107; /* Yellow hover effect */
-  color: black;
+  background-color: #555555; /* Lighter gray on hover */
+  color: #ffffff; /* White text on hover */
 }
 
-/* Main Content Styling */
+/* Top Navbar */
+.navbar {
+  background-color: #ffc107; /* Yellow background */
+  color: #000000; /* Black text */
+}
+
+/* Content Area */
 .content-area {
+  background-color: #2e2e2e; /* Match page background */
+  color: #ffffff; /* White text for content */
+  padding: 20px;
   border-radius: 10px;
   min-height: 70vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Sidebar Options - Add Gap */
+.sidebar .list-group-item {
+  margin-bottom: 10px; /* Add spacing between options */
+  background-color: #444444; /* Dark gray background */
+  color: #ffc107; /* Yellow text */
+  border: none;
+  border-radius: 5px; /* Optional: round corners */
 }
 
-.bg-warning {
-  background-color: #ffc107 !important;
+.sidebar .list-group-item:hover {
+  background-color: #555555; /* Lighter gray on hover */
+  color: #ffffff; /* White text on hover */
 }
 
-.bg-dark {
-  background-color: #343a40 !important;
+/* Remove padding around the sidebar */
+.sidebar .list-group {
+  padding: 10px; /* Add padding to the entire list */
+}
+.navbar {
+  background-color: #ffc107; /* Yellow background */
+  color: #000000; /* Black text */
+  padding: 10px;
+  border-bottom: 2px solid #e0a800; /* Optional: Add a border for a cleaner look */
 }
 
-.text-white {
-  color: #fff !important;
+.navbar img {
+  border: 2px solid #ffffff; /* Optional: Add a white border to the avatar */
+  transition: transform 0.2s ease; /* Smooth hover effect */
 }
 
-.flex-grow-1 {
-  flex-grow: 1 !important;
+.navbar img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
 }
